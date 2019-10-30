@@ -1,0 +1,138 @@
+Name __________________________________________	Score _____ / 22
+‘
+CS 245 – Object-Oriented Programming
+Homework due October 28 at 6pm for 002 and October 29 at 6pm for 003
+Supporting Java Tools
+
+Which of the following is an advantage of a package?
+It helps you avoid name conflicts between classes developed by different people.
+It helps you categorize classes by theme or function.
+It helps you more easily separate source code from class files.
+Just a and b
+All of the above—-
+
+Which of the following is not an advantage of using jar files to distribute your code?
+They enable you to hide your source code from your users.
+They enable you to distribute one file in place of potentially many
+They are the same as executables, so whoever receives a jar file from you can double-click on it to run it.
+All of these are advantages of jar files.——
+
+For problems 3 through 8, we will write and work with a program that creates a Circle object and prints a text representation of it to the screen.
+
+Write the Circle class, placing it in the package edu.lewisu.cs.shapes. Equip it with a toString function.  
+	
+
+	package edu.lewisu.cs.shapes;
+	public class Circle{
+
+	@Override
+	public String toString(){
+		return "I am a circle";
+			}
+
+	}
+	
+
+
+
+
+
+
+
+
+
+Write the driver class with the public static void main function. In it, create a Circle object and print its text representation to the screen. Make sure you import the Circle class properly.
+
+
+import edu.lewisu.cs.shapes.Circle;
+public class App {
+	public static void main(String[] args ){
+	Circle circle = new Circle();	
+	System.out.println(circle);
+	}
+
+}
+
+
+
+
+
+
+Write the commands you will enter at the command line in order to compile the two classes you have created. 
+
+	javac -d . Circle.java
+
+
+
+
+Write the command you will enter at the command line / terminal window to run this program. 
+	java Shapes
+
+Write the command you’d issue to place the edu.lewisu.cs.shapes code in a jar file called library.jar  
+
+
+	jar cf library.jar edu
+
+
+Write the commands you’d issue at the command line to compile and run the application using the jar file’s contents instead of the original source code files.  
+
+javac -cp :library.jar Shapes.java
+java -cp :library.jar Shapes
+
+
+
+
+
+Which of the following is true of unit tests?
+Unit tests are good for verifying that complicated user interaction behaves as expected
+Unit tests are typically used to test small code modules rather than large sections of code.—-
+Unit tests are used to test the performance of a block of code.
+Unit tests focus only on state, not on behavior.
+
+If I want to test whether an entire application works as it should, rather than just part of it, I would use 
+An integration test
+A unit test
+A performance test
+A blood test
+
+Write a class called TextAnalyzer that, in addition to main, has two functions, one called countVowels, and the other called countWords. countVowels takes in a string and returns the number of vowels in it. countWords takes in a string and returns the number of words in it. 
+
+Then write a class called TextAnalyzerTest that uses the JUnit framework to test the functions countVowels and countWords for TextAnalyzer.
+
+Paste your code for both TextAnalyzer and TextAnalyzerTest here. (6 points).
+
+
+Paste a screen shot of the window that shows that your TextAnalzyerTest found no errors in your TextAnalyzer implementation from problem 11. Feel free to perform your test either from the command line (using the TestRunner class) or from Eclipse. (2 points)
+
+
+
+
+
+
+
+
+
+
+
+
+This problem relates to git and github.
+Create an account on github. Past a screenshot of the screen you see when you log into your account here.
+
+
+
+
+
+
+
+On your local machine, use the command prompt to clone the repository you just created on your own machine. Show the command you used here. (1 point)
+
+	
+
+
+
+Create a file in that directory you just cloned to your repository in part b. Commit the file with a comment that says "First upload", and then push the now modified repository to github. Paste a screenshot of the command prompt where you did this work. (2 points)
+
+
+
+
+
